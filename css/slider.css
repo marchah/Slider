@@ -1,0 +1,7 @@
+.slider{margin:auto;padding:20px;}
+
+.slider .text {
+	position:absolute;
+	z-index:2;
+	background-color: rgba(0, 0, 0, 0.5);
+}

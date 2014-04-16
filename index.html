@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>test</title>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slider.css">
+		<style>
+			body{background:#3498db;color:#fff;}
+		</style>
+	</head>
+	<body>
+		<div id="newsSlider">
+		</div>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="Slider.class.js"></script>
+		<script>
+			
+		
+			$(document).ready(function(){
+				var slider = new Slider();
+				
+				slider.Construct("newsSlider");
+				slider.addSlide("img/fonz1.png", "Title 1", "text 1");
+				slider.addSlide("img/fonz2.png", "Title 2", "text 2");
+				slider.addSlide("img/fonz3.png", "Title 3", "text 3");
+				slider.addSlide("img/fonz4.jpg", "Title 4", "text 4");
+				slider.addSlide("img/fonz5.jpg", "Title 5", "text 5");
+				slider.display();
+				//slider.setSize(600, 400, 200);
+				slider.setting(2000);
+			});
+		</script>
+	</body>
+</html>
